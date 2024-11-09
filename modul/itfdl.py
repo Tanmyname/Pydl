@@ -44,10 +44,10 @@ def getvid():
             os.chdir(now)
             os.system('python main.py')
             sys.exit()
-        else :
-            now = os.getcwd()
-            os.chdir(now)
-            os.system('python3 main.py')
-            sys.exit()
+      else :
+        now = os.getcwd()
+        os.chdir(now)
+        os.system('python3 main.py')
+        sys.exit()
     else:
         print('bye')
