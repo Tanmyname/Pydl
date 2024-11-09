@@ -39,6 +39,15 @@ def getvid():
         print(f"Shomthing wrong :( {e}")
     back = input("\n\nBack to Home => [y/n] ")
     if back == 'y' or back == 'Y':
-      os.chdir('/sdcard/pydl')
-      os.system('bash run.sh')
-      sys.exit()
+      if os.name == 'nt':
+            now = os.getcwd()
+            os.chdir(now)
+            os.system('python main.py')
+            sys.exit()
+        else :
+            now = os.getcwd()
+            os.chdir(now)
+            os.system('python3 main.py')
+            sys.exit()
+    else:
+        print('bye')
