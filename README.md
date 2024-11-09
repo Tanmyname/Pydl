@@ -15,4 +15,12 @@ cd /sdcard
 ```
 pkg update -y && pkg upgrade -y && pkg install git -y && pkg install python3 && git clone https://github.com/Tanmyname/Pydl.git
 ```
+**Step 3**
+```
+cd Pydl 
+```
+**Step 4**
+```
+python3 run.py
+```
 
