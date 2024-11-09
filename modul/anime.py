@@ -1,3 +1,5 @@
+from pytubefix import YouTube
+from pytubefix.cli import on_progress
 from yt_dlp import YoutubeDL
 from pytubefix import Search
 from colorama import Fore as x
@@ -39,7 +41,10 @@ def muse_anime():
       print("-"*40)
       get = input(f"download Anime {info } Episode {i} [y/n] ? ")
       if get == "Y" or get == "y":
-        getanime(url)
+        try:
+          getanime(url)
+        except:
+          print('Eror try again downloads)
       else :
         break
       break
