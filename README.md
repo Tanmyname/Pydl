@@ -1,8 +1,8 @@
 # PYDL
 **About**
----------------------------------
-uploaded on date 9 months 11 years 2024
----------------------------------
+
+© uploaded on date 9 months 11 years 2024 by Tanmyname
+
 Pydl is a program that uses the python library to download videos from several social media platforms and images from pinterest. 
 ## INSTALLASION 
 **Termux**
