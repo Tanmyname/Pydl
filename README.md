@@ -6,6 +6,6 @@
 Pydl is a program that uses the python library to download videos from several social media platforms and images from pinterest. 
 ## INSTALLASION 
 **Termux**
-1.cd /sdcard 
-2.git clone 
+**1**.```cd /sdcard```
+**2**.```pkg update -y && pkg upgrade -y && pkg install git -y && pkg install python3 ```
 
