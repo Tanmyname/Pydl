@@ -48,7 +48,7 @@ def muse_anime():
       if get == "Y" or get == "y":
         try:
           getanime(url)
-        except:
+        finally:
           print('Eror try again downloads')
           rdl(url)              
       else :
@@ -87,7 +87,7 @@ def anione_anime():
       if get == "Y" or get == "y":
          try:
             getanime(url)
-         except:
+         finally:
            print('Eror try again downloads')
            rdl(url)              
       else :
