@@ -1,10 +1,6 @@
 import os 
 
-if os.name == 'nt':
-   os.system('cls')
-else :
-  os.system('clear')
-
+os.system('clear')
 os.system('pkg  update')
 os.system('pkg upgrade ')
 os.system('pkg  install python3')
