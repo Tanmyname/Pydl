@@ -11,7 +11,7 @@ Pydl is a program that uses the python library to download videos from several s
 ```
 cd /sdcard
 ```
-
+**Step 2**
 ```
 pkg update -y && pkg upgrade -y && pkg install git -y && pkg install python3
 ```
