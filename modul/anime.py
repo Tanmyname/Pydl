@@ -46,11 +46,7 @@ def muse_anime():
       print("-"*40)
       get = input(f"download Anime {info } Episode {i} [y/n] ? ")
       if get == "Y" or get == "y":
-        try:
-          getanime(url)
-        finally:
-          print('Eror try again downloads')
-          rdl(url)              
+         rdl(url)              
       else :
         break
       break
@@ -85,11 +81,7 @@ def anione_anime():
       print("-"*40)
       get = input(f"download Anime {info } Episode {i} [y/n] ? ")
       if get == "Y" or get == "y":
-         try:
-            getanime(url)
-         finally:
-           print('Eror try again downloads')
-           rdl(url)              
+         rdl(url)              
       else :
         break
       break
