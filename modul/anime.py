@@ -6,6 +6,11 @@ from colorama import Fore as x
 import os 
 import sys 
 
+def rdl(url):
+  yt = YouTube(url, on_progress_callback = on_progress)
+  print(yt.title)
+  ys = yt.streams.get_highest_resolution()
+  ys.download()
   
 def getanime(url):
     ydl_opts = {
@@ -44,7 +49,8 @@ def muse_anime():
         try:
           getanime(url)
         except:
-          print('Eror try again downloads)
+          print('Eror try again downloads')
+          rdl(url)              
       else :
         break
       break
@@ -79,7 +85,11 @@ def anione_anime():
       print("-"*40)
       get = input(f"download Anime {info } Episode {i} [y/n] ? ")
       if get == "Y" or get == "y":
-        getanime(url)
+       try:
+          getanime(url)
+        except:
+          print('Eror try again downloads')
+          rdl(url)              
       else :
         break
       break
