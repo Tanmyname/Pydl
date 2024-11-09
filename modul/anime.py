@@ -85,11 +85,11 @@ def anione_anime():
       print("-"*40)
       get = input(f"download Anime {info } Episode {i} [y/n] ? ")
       if get == "Y" or get == "y":
-       try:
-          getanime(url)
-        except:
-          print('Eror try again downloads')
-          rdl(url)              
+         try:
+            getanime(url)
+          except:
+            print('Eror try again downloads')
+            rdl(url)              
       else :
         break
       break
