@@ -37,6 +37,9 @@ def main():
     elif opsion == 5 :
       cls()
       itfdl.getvid()
+    else :
+      print('uknown opsion ')
+      main()
   except ValueError:
     print(f"{Fore.RED}Invalid input plis input 1,2,3,4 not abjad or char ")
     main()
