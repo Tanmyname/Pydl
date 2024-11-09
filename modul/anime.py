@@ -53,9 +53,16 @@ def muse_anime():
     if i >=eps:
       back = input("\n\nBack to Home => [y/n] ")
       if back == 'y' or back == 'Y':
-        os.chdir('/sdcard/pydl')
-        os.system('bash run.sh')
-        sys.exit()
+        if os.name == 'nt':
+            now = os.getcwd()
+            os.chdir(now)
+            os.system('python main.py')
+            sys.exit()
+        else :
+            now = os.getcwd()
+            os.chdir(now)
+            os.system('python3 main.py')
+            sys.exit()
       else :
         break
   
@@ -88,9 +95,16 @@ def anione_anime():
     if i >=eps:
       back = input("Back to Home => [y/n] ")
       if back == 'y' or back == 'Y':
-        os.chdir('/sdcard/pydl')
-        os.system('bash run.sh')
-        sys.exit()
+        if os.name == 'nt':
+            now = os.getcwd()
+            os.chdir(now)
+            os.system('python main.py')
+            sys.exit()
+        else :
+            now = os.getcwd()
+            os.chdir(now)
+            os.system('python3 main.py')
+            sys.exit()
       else :
         break
     
