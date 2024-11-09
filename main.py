@@ -20,7 +20,7 @@ def main():
     if opsion == 0:
       cls()
       print("Bye ")
-    if opsion == 1:
+    elif opsion == 1:
         cls()
         print("Welcome in ytdl\n")
         ytdl.search()
