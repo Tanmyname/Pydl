@@ -24,4 +24,8 @@ cd Pydl
 ```
 python3 run.py
 ```
+**Step 5**
+```
+python3 main.py
+```
 
